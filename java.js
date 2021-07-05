@@ -10,7 +10,7 @@ var hour8 = $("#16");
 var hour9 = $("#17");
 var time = moment();
 
-// set planner function used to set the time and ate on the website and set the text in each time block based on if there is anything saved in local storage
+// set planner function used to set the time and date on the website and set the text in each time block based on if there is anything saved in local storage
 function setPlanner() {
 
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
