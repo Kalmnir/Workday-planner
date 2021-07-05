@@ -13,7 +13,7 @@ As a student and a working adult, I tend to have a fairly busy schedule most day
 
 ## Screenshot of the deployed site
 
-
+![website screenshot](https://github.com/Kalmnir/Workday-planner/blob/main/screenshot/WorkDayScheduler.png)
 
 ## Link to the deployed site
 
