@@ -9,6 +9,7 @@ As a student and a working adult, I tend to have a fairly busy schedule most day
 -A save function on each of the time blocks that pushes the text into local storage and persists it's text through reloads
 -A clock that shows the date and time to the second
 -Reactive css features that changes the background color of the blocks depending on whether or not the time of day has gone past it
+-A clear all button to remove everything from local storage if wanted
 ```
 
 ## Screenshot of the deployed site
