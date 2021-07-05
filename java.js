@@ -1,3 +1,4 @@
+// declared global variables
 var hour1 = $("#9");
 var hour2 = $("#10");
 var hour3 = $("#11");
@@ -9,6 +10,7 @@ var hour8 = $("#16");
 var hour9 = $("#17");
 var time = moment();
 
+// set planner function used to set the time and ate on the website and set the text in each time block based on if there is anything saved in local storage
 function setPlanner() {
 
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
@@ -26,6 +28,7 @@ function setPlanner() {
 setPlanner();
 var saveBtn = $(".saveBtn");
 
+// save button event listener and function
 saveBtn.on("click", function () {
     var time = $(this).parent().attr("id");
     var schedule = $(this).siblings(".schedule").val();
@@ -33,6 +36,7 @@ saveBtn.on("click", function () {
     localStorage.setItem(time, schedule);
 });
 
+// function used to determine what the background color should be for each time block depending on time of day
 function pastPresentFuture() {
     hour = time.hours();
     $(".time-block").each(function () {
