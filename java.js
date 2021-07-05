@@ -1,12 +1,12 @@
+var hour1 = $("#1");
+var hour2 = $("#2");
+var hour3 = $("#3");
+var hour4 = $("#4");
+var hour5 = $("#5");
+var hour6 = $("#6");
+var hour7 = $("#7");
+var hour8 = $("#8");
 var hour9 = $("#9");
-var hour10 = $("#10");
-var hour11 = $("#11");
-var hour12 = $("#12");
-var hour1 = $("#13");
-var hour2 = $("#14");
-var hour3 = $("#15");
-var hour4 = $("#16");
-var hour5 = $("#17");
 var time = moment();
 
 function setPlanner() {
@@ -33,6 +33,21 @@ saveBtn.on("click", function () {
     localStorage.setItem(time, schedule);
 });
 
+function pastPresentFuture() {
+    hour = time.hours();
+    $(".time-block").each(function () {
+        var thisHour = parseInt($(this).attr("id"));
 
+        if (thisHour > hour) {
+            $(this).addClass("future")
+        }
+        else if (thisHour === hour) {
+            $(this).addClass("present");
+        }
+        else {
+            $(this).addClass("past");
+        }
+    })
+}
 
-
+pastPresentFuture();
