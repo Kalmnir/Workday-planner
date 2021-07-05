@@ -1,12 +1,12 @@
-var hour1 = $("#1");
-var hour2 = $("#2");
-var hour3 = $("#3");
-var hour4 = $("#4");
-var hour5 = $("#5");
-var hour6 = $("#6");
-var hour7 = $("#7");
-var hour8 = $("#8");
-var hour9 = $("#9");
+var hour1 = $("#9");
+var hour2 = $("#10");
+var hour3 = $("#11");
+var hour4 = $("#12");
+var hour5 = $("#13");
+var hour6 = $("#14");
+var hour7 = $("#15");
+var hour8 = $("#16");
+var hour9 = $("#17");
 var time = moment();
 
 function setPlanner() {
